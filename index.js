@@ -1,3 +1,9 @@
+const express = require("express");
+
+express().get("*", (req, res) => {
+  res.send("tunabot running...");
+}).listen(process.env.PORT || 8080);
+
 const Discord = require("discord.js");
 
 const client = new Discord.Client();
